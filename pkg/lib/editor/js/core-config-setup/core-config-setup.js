@@ -121,6 +121,16 @@ angular.module("quay-config")
             {'name': 'storage_path', 'title': 'Storage Directory', 'placeholder': '/path/inside/bucket', 'kind': 'text'}
           ],
 
+          'IBMCloudStorage': [
+            {'name': 'hostname', 'title': 'IBM Cloud Storage Hostname', 'placeholder': 'storage hostname', 'kind': 'text'},
+            {'name': 'port', 'title': 'Custom Port (optional)', 'placeholder': '443', 'kind': 'text', 'pattern': '^[0-9]+$', 'optional': true},
+            {'name': 'is_secure', 'title': 'Is Secure', 'placeholder': 'Require SSL', 'kind': 'bool'},
+            {'name': 'access_key', 'title': 'Access Key', 'placeholder': 'accesskeyhere', 'kind': 'text'},
+            {'name': 'secret_key', 'title': 'Secret Key', 'placeholder': 'secretkeyhere', 'kind': 'text'},
+            {'name': 'bucket_name', 'title': 'Bucket Name',  'placeholder': 'my-cool-bucket', 'kind': 'text'},
+            {'name': 'storage_path', 'title': 'Storage Directory', 'placeholder': '/path/inside/bucket', 'kind': 'text'}
+          ],
+
           'SwiftStorage': [
             {'name': 'auth_version', 'title': 'Swift Auth Version', 'kind': 'option', 'values': [1, 2, 3]},
             {'name': 'auth_url', 'title': 'Swift Auth URL', 'placeholder': 'http://swiftdomain/auth/v1.0', 'kind': 'text'},
